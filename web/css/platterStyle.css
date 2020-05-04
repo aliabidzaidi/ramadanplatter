@@ -1,3 +1,28 @@
 .navbar{
     background-color: #77160d;
 }
+
+.container-fluid{
+    width: 100%;
+    margin: 0;
+    margin: 0.5em 100px 0 1em;
+}
+.col-sm-8{
+    background-color: #fafafa;
+    border-radius: 0.25em;
+    border: 1px black solid;
+    margin: 0;
+}
+.col-sm-4{
+    background-color: #fafafa;
+    border-radius: 0.25em;
+    border: 1px black solid;
+    padding: 0 1.5em;
+}
+.menu{
+    text-align: center;
+    color:#77160d;
+    font-size: 28px;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+}
