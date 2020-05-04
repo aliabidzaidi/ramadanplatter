@@ -1,0 +1,42 @@
+.navbar{
+    background-color: #77160d;
+}
+
+.container-fluid{
+    margin-top: 1em;
+    padding: 0 1.5em;
+}
+
+.menuBox{
+    margin: 0;
+    width: 69%;
+    float: left;
+    border: 0px black solid;
+    padding: 1em;
+    border-radius: 0.25em;
+    background-color: #fafafa;
+
+
+    /* Temporary */
+    
+    height: 900px;
+
+    /* Temporary */
+}
+
+.checkoutBox{
+    margin: 0;
+    width: 30%;
+    float: right;
+    border: 0px black solid;
+    padding: 1em;
+    border-radius: 0.25em;
+    background-color: #fafafa;
+
+
+    /* Temporary */
+
+    height: 900px;
+
+    /* Temporary */    
+}
