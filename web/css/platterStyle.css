@@ -95,3 +95,18 @@
         float: none;
     }
 }
+
+.btn{
+    background-color: #77160d;
+    color: #fafafa;
+}
+
+.btn:hover{
+    color: #77160d;
+    background-color: #fafafa;
+    border-color: #77160d;
+}
+
+.btn:active{
+    box-shadow: none;
+}
