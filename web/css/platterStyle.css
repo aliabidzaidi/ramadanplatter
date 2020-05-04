@@ -3,26 +3,40 @@
 }
 
 .container-fluid{
-    width: 100%;
-    margin: 0;
-    margin: 0.5em 100px 0 1em;
-}
-.col-sm-8{
-    background-color: #fafafa;
-    border-radius: 0.25em;
-    border: 1px black solid;
-    margin: 0;
-}
-.col-sm-4{
-    background-color: #fafafa;
-    border-radius: 0.25em;
-    border: 1px black solid;
+    margin-top: 1em;
     padding: 0 1.5em;
 }
-.menu{
-    text-align: center;
-    color:#77160d;
-    font-size: 28px;
-    font-weight: 500;
-    font-family: 'Ubuntu', sans-serif;
+
+.menuBox{
+    margin: 0;
+    width: 69%;
+    float: left;
+    border: 0px black solid;
+    padding: 1em;
+    border-radius: 0.25em;
+    background-color: #fafafa;
+
+
+    /* Temporary */
+    
+    height: 900px;
+
+    /* Temporary */
+}
+
+.checkoutBox{
+    margin: 0;
+    width: 30%;
+    float: right;
+    border: 0px black solid;
+    padding: 1em;
+    border-radius: 0.25em;
+    background-color: #fafafa;
+
+
+    /* Temporary */
+
+    height: 900px;
+
+    /* Temporary */    
 }
