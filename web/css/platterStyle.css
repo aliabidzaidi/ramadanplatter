@@ -9,7 +9,7 @@
 
 .menuBox{
     margin: 0;
-    width: 69%;
+    width: 75%;
     float: left;
     border: 1px black solid;
     padding: 0.5em 1em 1em 1em;
@@ -26,7 +26,7 @@
 
 .orderBox{
     margin: 0;
-    width: 30%;
+    width: 24%;
     float: right;
     border: 1px black solid;
     padding: 0.5em 1em 1em 1em;
@@ -80,33 +80,34 @@
     background-color: #984f48;
 }
 
-.btn{
+.menuBox .btn{
     color: #1f1f1f;
     background-color: #fafafa;
     border-color: #fafafa;
     border-radius: 0;
     margin-right: 0;
     margin-left: 0;
-    font-size: 17px;
+    font-size: 18px;
     border: 0;
     transition-duration: 0.15s;
     box-sizing: content-box;
-    padding: 8px 18px;
+    padding: 8px 23px;
 }
 
-.btn:hover{
+.menuBox .btn:hover{
     background-color: #77160d;
     color: #fafafa;
 }
 
-.btn:focus,.btn:active {
+.menuBox .btn:focus,.btn:active {
    outline: none !important;
    box-shadow: none;
 }
 
-.btn:active{
+.menuBox .btn:active{
     background-color: #690800;
     color: #f5f5f5;
+    transition-duration: 0.1s;
 }
 
 #secondRowMenu{
@@ -115,19 +116,91 @@
 }
 
 #secondRowMenu .btn{
-    height: 42px;
+    height: 36px;
     width: auto;
 }
 
 #firstRowMenu{
+    margin-top: 0.5em;
     padding-left: 2em ;
     padding-right: 2em ;
 }
 
 #firstRowMenu .btn{
-    height: 42px;
+    height: 36px;
     width: auto;
-    padding: 8px 22px;
+    padding: 8px 27px;
+}
+
+.scrollable{
+    margin: 4em 0 0 0;
+    height: 60%;
+    width: 100%;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.scrollable:hover{
+    scrollbar-track-color: #fafafa;
+    scrollbar-width: thin;
+}
+
+.scrollable::-webkit-scrollbar{
+    width: 8px;
+}
+
+.scrollable::-webkit-scrollbar-track{
+    background-color: #fafafa;
+}
+
+.scrollable::-webkit-scrollbar-thumb{
+    background: #ddd;
+    visibility: hidden;
+}
+
+.scrollable:hover::-webkit-scrollbar-thumb{
+    visibility: visible;
+}
+
+.form-control{
+    background-color: #fafafa;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #d1d1d1;
+    width: 90%;
+    margin: auto;
+}
+
+.form-control:active{
+    background-color: #fafafa;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.form-control:focus,.form-control:active {
+    background-color: #fafafa;
+    border-radius: 0;
+    border-bottom: 1px solid #d1d1d1;
+    outline: none !important;
+    box-shadow: none;
+ }
+
+select::-ms-expand{
+    display:none;
+}
+
+ select {
+    background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #ddd;
+    -webkit-appearance: none;
+    background-position: 97.5% 50%;
+    -moz-appearance: none;
+}
+
+.orderBox h5{
+    margin-top: 3em;
+    color: #6c6c6c;
 }
 
 @media(max-width:1100px){
@@ -136,11 +209,12 @@
         margin: 0;
         float: none;
     }
-}
-@media(max-width:1100px){
     .menuBox{
         width: 99%;
         margin: 0;
         float: none;
+    }
+    .scrollable{
+        height: 40%;
     }
 }
