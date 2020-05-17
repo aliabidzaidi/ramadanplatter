@@ -1,13 +1,19 @@
+*{
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
 .navbar{
     background-color: #77160d;
 }
 
 #mainBox{
-    margin-top: 1em;
+    position: absolute;
+    top: 4.5em;
     padding: 0 1em;
 }
 
 .menuBox{
+    position: relative;
     margin: 0;
     width: 79%;
     float: left;
@@ -15,18 +21,19 @@
     padding: 0.5em 0em 1em 0em;
     border-radius: 0em;
     background-color: #fafafa;
-    overflow: hidden; 
+    overflow: visible; 
     
 
 
     /* Temporary */
     
-    height: 860px;
+    height: 840px;
 
     /* Temporary */
 }
 
 .orderBox{
+    position: relative;
     margin: 0;
     width: 20%;
     float: right;
@@ -44,6 +51,7 @@
 }
 
 .menuBox h1{
+    position: relative;
     font-family: 'Ubuntu', sans-serif;
     color: #77160d;
     font-weight: 500;
@@ -52,8 +60,9 @@
 }
 
 .menuBox hr{
+    position: relative;
+    top: 0.5em;
     font-family: 'Ubuntu', sans-serif;
-    margin-top: 1.75em;
     margin-bottom: 3em;
     text-align: center;
     width: 4.5em;
@@ -89,11 +98,11 @@
     border-radius: 0;
     margin-right: 0;
     margin-left: 0;
-    font-size: 18px;
+    font-size: 20px;
     border: 0;
     transition-duration: 0.15s;
     box-sizing: content-box;
-    padding: 8px 23px;
+    padding: 8px 26px;
 }
 
 .menuBox .btn:hover{
@@ -112,31 +121,38 @@
     transition-duration: 0.1s;
 }
 
-#secondRowMenu{
+.inlineDiv{
+    display: inline;
+}
+
+.firstRowMenu{
+    margin-top: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.firstRowMenu .btn{
+    height: 36px;
+    width: auto;
+    padding: 8px 32px;
+}
+
+.secondRowMenu{
     padding-left: 4.5em;
     padding-right: 4.5em;
 }
 
-#secondRowMenu .btn{
+.secondRowMenu .btn{
     height: 36px;
     width: auto;
-}
-
-#firstRowMenu{
-    margin-top: 0.5em;
-    padding-left: 2em ;
-    padding-right: 2em ;
-}
-
-#firstRowMenu .btn{
-    height: 36px;
-    width: auto;
-    padding: 8px 27px;
+    padding: 8px 28px;
 }
 
 .scrollable{
+    position: relative;
+    right: 1px;
+    top: 0.7em;
     padding:0;
-    margin: 1em 0 0 0;
     height: 54%;
     width: 100%;
     overflow-y: auto;
@@ -154,6 +170,7 @@
 .scrollable::-webkit-scrollbar{
     width: 0;
 }
+
 .form-control{
     background-color: #fafafa;
     border: 0;
@@ -191,37 +208,58 @@ select::-ms-expand{
     -moz-appearance: none;
 }
 
-.menuBox h4{
-    margin: 4em 1em 1.25em 1em;
+.menuBox #sectionName{
+    position: relative;
+    top: 0.5em;
+    font-size: 28px;
+    font-weight: 650;
+    margin: 77px 1em 1.25em 1em;
 
 }
 
 .foodName{
-    font-size: 22px;
+    position: relative;
+    top: 14px;
+    left: 1.6em;
+    font-size: 24px;
     font-weight:650;
     color: #77160d;
-    margin-top: 14px;
-    margin-bottom: 24px;
+}
+
+.foodDesc{
+    position: relative;
+    top: 24px;
+    left: 2.25em;
+    font-size: 18px;
 }
 
 .foodPrice{
-    font-size: 17px;
+    position:relative;
+    top: 1.25em;
+    right: 1em;
+    font-size: 20px;
     font-weight: 600;
-    margin: 1.25em 1em 0 0;
     color: #77160d;
     float:right;
 }
 
-.foodDesc{
-    font-size: 17px;
-}
-
-{
-
+.menuItem .addButton{
+    position: relative;
+    top: 1.75em;
+    padding: 10px 23px;
+    background-color: inherit;
+    float:right;
+    transition-duration: 0ms;
+    font-weight: 600;
+    border: 2px solid #77160d;
+    color: #77160d;
 }
 
 .vl{
-    margin: 0.75em 2.25em 0.75em 0.75em;
+    position: relative;
+    top: 0.5em;
+    left: 0.5em;
+    margin-bottom: 1em;
     border:0;
     border-left: 4px solid #d1d1d1;
     height: 135px;
@@ -237,16 +275,26 @@ select::-ms-expand{
 }
 
 .menuItem:hover{
-    background-color: #dadada;
+    background-color: #f4f4f4;
 }
 
 .menuItem:hover .vl{
-    margin: 0.75em 2.25em 0.75em 1em;
+    position: relative;
+    top: 0.5em;
+    left: 0.75em;
     border:0;
     border-left: 4px solid #984f48;
     height: 135px;
     width:0px;
     float:left;
+}
+
+.menuItem:hover .foodName{
+    left: 2em;
+}
+
+.menuItem:hover .foodDesc{
+    left: 2.5em;
 }
 
 .menuItem p{
@@ -268,14 +316,20 @@ select::-ms-expand{
     color: #6c6c6c;
 }
 
-.menuItem .addButton{
-    padding: 10px 23px;
-    background-color: inherit;
-    float:right;
-    transition-duration: 0ms;
-    font-weight: 600;
-    border: 2px solid #77160d;
-    color: #77160d;
+.orderBox .list-group-item {
+    background-color: #fafafa;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    height: 50px;
+}
+
+.orderBox .list-group-item:last-child{
+    border-bottom-width: 0px;
+}
+
+.orderItem{
+    background-color: #fafafa;
+    border-radius: 0;
 }
 
 @media(max-width:1100px){

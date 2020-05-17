@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="css/platterStyle.css">
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <title>Ramadan Platter</title>
     </head>
 
@@ -54,16 +55,16 @@
                 <hr>
 
                 <!-- First Row Buttons -->
-                <div class="container-fluid" id="firstRowMenu">
-                    <button class="btn btn-lg">Ramadan (between 5 to 8.30pm Only)</button><button class="btn btn-lg">Starters & Appetisers</button><button class="btn btn-lg">Shaan-e-Karachi</button><button class="btn btn-lg">Biryani</button><button class="btn btn-lg">BBQ & Grill</button><button class="btn btn-lg">Seafood</button><button class="btn btn-lg">Chicken Curries</button>
+                <div class="container-fluid firstRowMenu">
+                    <div class="inlineDiv" id="firstButtonSection"><button class="btn btn-lg">Ramadan (between 5 to 8.30pm Only)</button><button class="btn btn-lg">Starters & Appetisers</button><button class="btn btn-lg">Shaan-e-Karachi</button></div><div class="inlineDiv" id="secondButtonSection"><button class="btn btn-lg">Biryani</button><button class="btn btn-lg">BBQ & Grill</button><button class="btn btn-lg">Seafood</button><button class="btn btn-lg">Chicken Curries</button></div>
                 </div>
 
                 <!-- Second Row Buttons -->
-                <div class="container-fluid" id="secondRowMenu">
-                    <button class="btn btn-lg">Lamb Curries</button><button class="btn btn-lg">Veg Curries</button><button class="btn btn-lg">Burgers & Rolls</button><button class="btn btn-lg">Sides & Accompaniments</button><button class="btn btn-lg">Tandoori Breads</button><button class="btn btn-lg">Desserts</button><button class="btn btn-lg">Drinks</button><button class="btn btn-lg">Kid's Choices</button>
+                <div class="container-fluid secondRowMenu">
+                    <div class="inlineDiv" id="thirdButtonSection"><button class="btn btn-lg">Lamb Curries</button><button class="btn btn-lg">Veg Curries</button><button class="btn btn-lg">Burgers & Rolls</button><button class="btn btn-lg">Sides & Accompaniments</button></div><div class="inlineDiv" id="lastButtonSection"><button class="btn btn-lg">Tandoori Breads</button><button class="btn btn-lg">Desserts</button><button class="btn btn-lg">Drinks</button><button class="btn btn-lg">Kid's Choices</button></div>
                 </div>
 
-                <h4>SHAAN-E-KARACHI</h4>
+                <h4 id="sectionName">SHAAN-E-KARACHI</h4>
                 <div class="scrollable">
                     <ul class="list-group">
                         <li class="list-group-item menuItem"><div class="vl"></div><label class="foodName">Lamb Nihari</label><label class="foodPrice">£10.95</label><br><p class="foodDesc">a List Item</p><button class="btn addButton">+ Add</button></li>
@@ -87,11 +88,17 @@
                     </div>
                     <div class="container-fluid">
                         <h5>ORDER</h5>
-                        <ul class="list-group">
-                            <li class="list-group-item orderItem alert alert-dismissable">Yes<button type="button" class="close" data-dismiss="alert"><span>&times;</span></button></li>
-                            <li class="list-group-item"></li>
-                            <li class="list-group-item"></li>
-                        </ul>
+                        <div class="scrollable">
+                            <ul class="list-group">
+                                <li class="list-group-item orderItem alert alert-dismissable">Yes<button type="button" class="close" data-dismiss="alert"><span class="closeCross">&times;</span></button></li>
+                                <li class="list-group-item"></li>
+                                <li class="list-group-item"></li>
+                                <li class="list-group-item"></li>
+                            </ul>
+                        </div>    
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Enter Voucher Code">
                     </div>
             </div>
         </div>
