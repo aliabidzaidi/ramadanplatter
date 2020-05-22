@@ -16,8 +16,9 @@
     position: relative;
     margin: 0;
     width: 79%;
+    min-width: 310px;
     float: left;
-    border: 1px black solid;
+    border: 0px black solid;
     padding: 0.5em 0em 1em 0em;
     border-radius: 0em;
     background-color: #fafafa;
@@ -36,8 +37,9 @@
     position: relative;
     margin: 0;
     width: 20%;
+    min-width: 310px;
     float: right;
-    border: 1px black solid;
+    border: 0px black solid;
     padding: 0.5em 1em 1em 1em;
     border-radius: 0em;
     background-color: #fafafa;
@@ -45,7 +47,7 @@
 
     /* Temporary */
 
-    height:860px;
+    height:840px;
 
     /* Temporary */    
 }
@@ -149,16 +151,16 @@
 }
 
 .scrollable{
-    position: relative;
-    right: 1px;
-    top: 0.7em;
+    position: absolute;
+    left: -1px;
+    top: 46%;
     padding:0;
     height: 54%;
     width: 100%;
     overflow-y: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    border: 1px solid black;
+    border: 0px solid black;
     box-sizing: content-box;
 }
 
@@ -209,8 +211,8 @@ select::-ms-expand{
 }
 
 .menuBox #sectionName{
-    position: relative;
-    top: 0.5em;
+    position: absolute;
+    top: 30%;
     font-size: 28px;
     font-weight: 650;
     margin: 77px 1em 1.25em 1em;
@@ -231,6 +233,7 @@ select::-ms-expand{
     top: 24px;
     left: 2.25em;
     font-size: 18px;
+    max-width:60%;
 }
 
 .foodPrice{
@@ -244,8 +247,9 @@ select::-ms-expand{
 }
 
 .menuItem .addButton{
-    position: relative;
-    top: 1.75em;
+    position: absolute;
+    bottom: 2em;
+    right: 3%;
     padding: 10px 23px;
     background-color: inherit;
     float:right;
@@ -312,7 +316,8 @@ select::-ms-expand{
 }
 
 .orderBox h5{
-    margin-top: 3em;
+    position: relative;
+    top: 3em;
     color: #6c6c6c;
 }
 
@@ -321,15 +326,172 @@ select::-ms-expand{
     border-left-width: 0px;
     border-right-width: 0px;
     height: 50px;
+    padding-left: 4px;
+}
+
+.itemPrice{
+    position: absolute;
+    top: 14px;
+    right: 28px;
+    display:inline;
+    font-weight: 450;
 }
 
 .orderBox .list-group-item:last-child{
+    height: 50px;
     border-bottom-width: 0px;
 }
 
 .orderItem{
     background-color: #fafafa;
     border-radius: 0;
+}
+
+button.close {
+    position: absolute;
+    bottom: 12px;
+    right: -4px;
+    background: #fafafa;
+    border: 0 none !important;
+    color: #575757;
+    display: inline-block;
+    font-size: 32px;
+    font-weight: 825;
+    opacity: 1;
+    text-align: center;
+    text-shadow: none;
+    -webkit-transition: background 0.2s ease-in-out;
+    transition: background 0.2s ease-in-out;
+    vertical-align: top;
+    width: 30px;
+    outline-width: 0;
+}
+
+.orderBox .scrollable{
+    position: relative;
+    top: 3.6em;
+    height: 200px;
+}
+
+.BoxBorder{
+    margin: 0;
+    position:relative;
+    top: 3.5em;
+    left: 14px;
+    width: 87.2%;
+    border: 1px solid #d1d1d1;
+    border-width: 1px 0 1px 0;
+    box-sizing: content-box;
+    padding-bottom:1em;
+    height: 55px;
+
+}
+
+#voucherBox{
+    position: relative;
+    top: 6px;
+    background-color: #ededed;
+    height: 45px;
+    width: 100%;
+    box-sizing: content-box;
+    padding-bottom: 0.5em;
+}
+
+#giftBox{
+    position: relative;
+    top: 4px;
+    left: 15px;
+}
+
+.voucher{
+    position: relative;
+    top: 6px;
+    left: 1em;
+    margin: 0;
+    padding-left: 0.5em;
+    height: 100%;
+    width: 75%;
+    box-sizing: content-box;
+    outline-width: 0;
+    border-width: 0px;
+    background-color: #ededed;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+#priceBox{
+    border-top-width: 0;
+    position: relative;
+    width: 91.8%;
+}
+
+#totalPrice{
+    position: absolute;
+    top: 19px;
+    font-weight: 600;
+}
+
+#nextStep{
+    position:absolute;
+    left: 7.5%;
+    bottom: 20px;
+    width: 85%;
+    height: 8%;
+    border-radius: 0;
+    background-color: #77160d;
+    color: #fafafa;
+    font-size: 24px;
+    font-weight: 450;
+}
+
+#nextStep:active{
+    outline: none !important;
+    box-shadow: none;
+    background-color: #690800;
+    color: #f5f5f5;
+    transition-duration: 0.1s;
+}
+
+#nextStep:focus{
+    outline: none !important;
+    box-shadow: none;
+}
+
+@media(max-width:1855px){
+    .firstRowMenu{
+        top:0;
+        left:0;
+        padding:0;
+        display:inline;
+    }
+    .secondRowMenu{
+        top:0;
+        left:0;
+        padding:0;
+        display:inline;
+    }
+}
+
+@media(max-width:1390px){
+    #firstButtonSection{
+        position: relative;
+        left:25%;
+        display:block;
+    }
+    #secondButtonSection{
+        position: relative;
+        left:25%;
+        display:block;
+    }
+    #thirdButtonSection{
+        position: relative;
+        left:25%;
+        display:block;
+    }
+    #lastButtonSection{
+        position: relative;
+        left:25%;
+        display:block;
+    }
 }
 
 @media(max-width:1100px){
@@ -345,5 +507,28 @@ select::-ms-expand{
     }
     .scrollable{
         height: 40%;
+    }
+}
+
+@media(max-width:700px){
+    #firstButtonSection{
+        position: relative;
+        left:0%;
+    }
+    #secondButtonSection{
+        position: relative;
+        left:0%;
+    }
+    #thirdButtonSection{
+        position: relative;
+        left:0%;
+    }
+    #lastButtonSection{
+        position: relative;
+        left:0%;
+    }
+    .menuItem .addButton{
+        position:absolute;
+        right: 10%;
     }
 }

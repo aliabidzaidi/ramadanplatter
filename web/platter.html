@@ -90,16 +90,23 @@
                         <h5>ORDER</h5>
                         <div class="scrollable">
                             <ul class="list-group">
-                                <li class="list-group-item orderItem alert alert-dismissable">Yes<button type="button" class="close" data-dismiss="alert"><span class="closeCross">&times;</span></button></li>
+                                <li class="list-group-item orderItem alert alert-dismissable"><p>1 &times; Lamb Nihari</p><p class="itemPrice">£10.95</p><button type="button" class="close" data-dismiss="alert"><span class="closeCross">&times;</span></button></li>
                                 <li class="list-group-item"></li>
                                 <li class="list-group-item"></li>
                                 <li class="list-group-item"></li>
                             </ul>
                         </div>    
                     </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Enter Voucher Code">
+                    <div class="form-control BoxBorder">
+                        <div id="voucherBox">
+                            <img id="giftBox"src="assets/giftBox30x30.png">
+                            <input type="text" class="voucher" placeholder="Enter Voucher Code">
+                        </div>
                     </div>
+                    <div class="BoxBorder" id="priceBox">
+                        <h4 id="totalPrice">Total: </h4>
+                    </div>
+                    <button class="btn" type="submit" id="nextStep">Next Step</button>
             </div>
         </div>
 
