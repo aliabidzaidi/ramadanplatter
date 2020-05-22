@@ -18,7 +18,7 @@
     width: 79%;
     min-width: 310px;
     float: left;
-    border: 0px black solid;
+    border: 1px black solid;
     padding: 0.5em 0em 1em 0em;
     border-radius: 0em;
     background-color: #fafafa;
@@ -160,7 +160,7 @@
     overflow-y: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    border: 0px solid black;
+    border: 1px solid black;
     box-sizing: content-box;
 }
 
@@ -203,7 +203,7 @@ select::-ms-expand{
     display:none;
 }
 
- select {
+select {
     background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #ddd;
     -webkit-appearance: none;
     background-position: 97.5% 50%;
@@ -371,19 +371,21 @@ button.close {
     position: relative;
     top: 3.6em;
     height: 200px;
+    width: 90%;
+    margin: auto;
 }
 
 .BoxBorder{
-    margin: 0;
+    margin: auto;
     position:relative;
-    top: 3.5em;
-    left: 14px;
-    width: 87.2%;
+    top: 57px;
+    left: -1px;
+    width: 90%;
     border: 1px solid #d1d1d1;
     border-width: 1px 0 1px 0;
-    box-sizing: content-box;
-    padding-bottom:1em;
-    height: 55px;
+    box-sizing: border-box;
+    padding: 6px 8px 1em 8px;
+    height: 79px;
 
 }
 
@@ -421,13 +423,23 @@ button.close {
 #priceBox{
     border-top-width: 0;
     position: relative;
-    width: 91.8%;
+    padding: 8px 10px;
+    height: 70px;
 }
 
-#totalPrice{
+#totalPriceTag{
     position: absolute;
     top: 19px;
     font-weight: 600;
+    font-size: 28px;
+}
+
+#price{
+    position: absolute;
+    top: 14px;
+    right: 10px;
+    font-weight: 600;
+    font-size: 28px;
 }
 
 #nextStep{
@@ -506,18 +518,36 @@ button.close {
         float: none;
     }
     .scrollable{
-        height: 40%;
+        height: 45%;
     }
 }
 
 @media(max-width:700px){
+    .menuBox{
+        height:1150px;
+    }
+    .menuBox #sectionName{
+        position: absolute;
+        top:44%;
+    }
+    .menuBox .scrollable{
+        top: 54.9%;
+    }
+    .firstRowMenu{
+        display:inline;
+    }
+    .secondRowMenu{
+        display:inline;
+    }
     #firstButtonSection{
         position: relative;
         left:0%;
+        display: inline;
     }
     #secondButtonSection{
         position: relative;
         left:0%;
+        display: inline;
     }
     #thirdButtonSection{
         position: relative;
@@ -530,5 +560,12 @@ button.close {
     .menuItem .addButton{
         position:absolute;
         right: 10%;
+    }
+    .orderBox{
+        position:relative;
+        top:1em;
+    }
+    #nextStep{
+        bottom: 40px;
     }
 }
