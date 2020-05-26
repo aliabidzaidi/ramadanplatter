@@ -305,6 +305,10 @@ select {
     float:left;
 }
 
+.list-group{
+    margin-block-end: 0;
+}
+
 .list-group-item:first-child{
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -313,6 +317,7 @@ select {
 .list-group-item:last-child{
     border-bottom-left-radius:0;
     border-bottom-right-radius:0;
+    height
 }
 
 .orderBox h5{
@@ -523,6 +528,9 @@ button.close {
 }
 
 @media(max-width:700px){
+    *{
+        float:none;
+    }
     .menuBox{
         height:1150px;
     }
@@ -552,10 +560,12 @@ button.close {
     #thirdButtonSection{
         position: relative;
         left:0%;
+        display:inline;
     }
     #lastButtonSection{
         position: relative;
         left:0%;
+        display:inline;
     }
     .menuItem .addButton{
         position:absolute;
@@ -567,5 +577,11 @@ button.close {
     }
     #nextStep{
         bottom: 40px;
+    }
+}
+
+@media(max-width:490px){
+    .menuBox{
+        height: 1300px;
     }
 }
