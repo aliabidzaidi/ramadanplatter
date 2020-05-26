@@ -1,0 +1,534 @@
+*{
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.navbar{
+    background-color: #77160d;
+}
+
+#mainBox{
+    position: absolute;
+    top: 4.5em;
+    padding: 0 1em;
+}
+
+.menuBox{
+    position: relative;
+    margin: 0;
+    width: 79%;
+    min-width: 310px;
+    float: left;
+    border: 0px black solid;
+    padding: 0.5em 0em 1em 0em;
+    border-radius: 0em;
+    background-color: #fafafa;
+    overflow: visible; 
+    
+
+
+    /* Temporary */
+    
+    height: 840px;
+
+    /* Temporary */
+}
+
+.orderBox{
+    position: relative;
+    margin: 0;
+    width: 20%;
+    min-width: 310px;
+    float: right;
+    border: 0px black solid;
+    padding: 0.5em 1em 1em 1em;
+    border-radius: 0em;
+    background-color: #fafafa;
+
+
+    /* Temporary */
+
+    height:840px;
+
+    /* Temporary */    
+}
+
+.menuBox h1{
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    color: #77160d;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.menuBox hr{
+    position: relative;
+    top: 0.5em;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 3em;
+    text-align: center;
+    width: 4.5em;
+    border: 0 solid black;
+    height: 5px;
+    background-color: #984f48;
+}
+
+
+.orderBox h1{
+    font-family: 'Ubuntu', sans-serif;
+    color: #77160d;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.orderBox hr{
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 1.75em;
+    margin-bottom: 3em;
+    text-align: center;
+    width: 4.5em;
+    border: 0 solid black;
+    height: 5px;
+    background-color: #984f48;
+}
+
+.menuBox .btn{
+    color: #1f1f1f;
+    background-color: #fafafa;
+    border-color: #fafafa;
+    border-radius: 0;
+    margin-right: 0;
+    margin-left: 0;
+    font-size: 20px;
+    border: 0;
+    transition-duration: 0.15s;
+    box-sizing: content-box;
+    padding: 8px 26px;
+}
+
+.menuBox .btn:hover{
+    background-color: #77160d;
+    color: #fafafa;
+}
+
+.menuBox .btn:focus,.btn:active {
+   outline: none !important;
+   box-shadow: none;
+}
+
+.menuBox .btn:active{
+    background-color: #690800;
+    color: #f5f5f5;
+    transition-duration: 0.1s;
+}
+
+.inlineDiv{
+    display: inline;
+}
+
+.firstRowMenu{
+    margin-top: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.firstRowMenu .btn{
+    height: 36px;
+    width: auto;
+    padding: 8px 32px;
+}
+
+.secondRowMenu{
+    padding-left: 4.5em;
+    padding-right: 4.5em;
+}
+
+.secondRowMenu .btn{
+    height: 36px;
+    width: auto;
+    padding: 8px 28px;
+}
+
+.scrollable{
+    position: absolute;
+    left: -1px;
+    top: 46%;
+    padding:0;
+    height: 54%;
+    width: 100%;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    border: 0px solid black;
+    box-sizing: content-box;
+}
+
+.scrollable:hover{
+    scrollbar-track-color: #fafafa;
+    scrollbar-width: none;
+}
+
+.scrollable::-webkit-scrollbar{
+    width: 0;
+}
+
+.form-control{
+    background-color: #fafafa;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #d1d1d1;
+    width: 80%;
+    box-sizing: content-box;
+    padding: 6px 8px 10px 8px;
+    margin: auto;
+}
+
+.form-control:active{
+    background-color: #fafafa;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.form-control:focus,.form-control:active {
+    background-color: #fafafa;
+    border-radius: 0;
+    border-bottom: 1px solid #d1d1d1;
+    outline: none !important;
+    box-shadow: none;
+ }
+
+select::-ms-expand{
+    display:none;
+}
+
+ select {
+    background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #ddd;
+    -webkit-appearance: none;
+    background-position: 97.5% 50%;
+    -moz-appearance: none;
+}
+
+.menuBox #sectionName{
+    position: absolute;
+    top: 30%;
+    font-size: 28px;
+    font-weight: 650;
+    margin: 77px 1em 1.25em 1em;
+
+}
+
+.foodName{
+    position: relative;
+    top: 14px;
+    left: 1.6em;
+    font-size: 24px;
+    font-weight:650;
+    color: #77160d;
+}
+
+.foodDesc{
+    position: relative;
+    top: 24px;
+    left: 2.25em;
+    font-size: 18px;
+    max-width:60%;
+}
+
+.foodPrice{
+    position:relative;
+    top: 1.25em;
+    right: 1em;
+    font-size: 20px;
+    font-weight: 600;
+    color: #77160d;
+    float:right;
+}
+
+.menuItem .addButton{
+    position: absolute;
+    bottom: 2em;
+    right: 3%;
+    padding: 10px 23px;
+    background-color: inherit;
+    float:right;
+    transition-duration: 0ms;
+    font-weight: 600;
+    border: 2px solid #77160d;
+    color: #77160d;
+}
+
+.vl{
+    position: relative;
+    top: 0.5em;
+    left: 0.5em;
+    margin-bottom: 1em;
+    border:0;
+    border-left: 4px solid #d1d1d1;
+    height: 135px;
+    width:0px;
+    float:left;
+}
+
+.menuItem{
+    background-color: #fafafa;
+    border-width: 0;
+    width:100%;
+    padding-right: 4.5em;
+}
+
+.menuItem:hover{
+    background-color: #f4f4f4;
+}
+
+.menuItem:hover .vl{
+    position: relative;
+    top: 0.5em;
+    left: 0.75em;
+    border:0;
+    border-left: 4px solid #984f48;
+    height: 135px;
+    width:0px;
+    float:left;
+}
+
+.menuItem:hover .foodName{
+    left: 2em;
+}
+
+.menuItem:hover .foodDesc{
+    left: 2.5em;
+}
+
+.menuItem p{
+    float:left;
+}
+
+.list-group-item:first-child{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.list-group-item:last-child{
+    border-bottom-left-radius:0;
+    border-bottom-right-radius:0;
+}
+
+.orderBox h5{
+    position: relative;
+    top: 3em;
+    color: #6c6c6c;
+}
+
+.orderBox .list-group-item {
+    background-color: #fafafa;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    height: 50px;
+    padding-left: 4px;
+}
+
+.itemPrice{
+    position: absolute;
+    top: 14px;
+    right: 28px;
+    display:inline;
+    font-weight: 450;
+}
+
+.orderBox .list-group-item:last-child{
+    height: 50px;
+    border-bottom-width: 0px;
+}
+
+.orderItem{
+    background-color: #fafafa;
+    border-radius: 0;
+}
+
+button.close {
+    position: absolute;
+    bottom: 12px;
+    right: -4px;
+    background: #fafafa;
+    border: 0 none !important;
+    color: #575757;
+    display: inline-block;
+    font-size: 32px;
+    font-weight: 825;
+    opacity: 1;
+    text-align: center;
+    text-shadow: none;
+    -webkit-transition: background 0.2s ease-in-out;
+    transition: background 0.2s ease-in-out;
+    vertical-align: top;
+    width: 30px;
+    outline-width: 0;
+}
+
+.orderBox .scrollable{
+    position: relative;
+    top: 3.6em;
+    height: 200px;
+}
+
+.BoxBorder{
+    margin: 0;
+    position:relative;
+    top: 3.5em;
+    left: 14px;
+    width: 87.2%;
+    border: 1px solid #d1d1d1;
+    border-width: 1px 0 1px 0;
+    box-sizing: content-box;
+    padding-bottom:1em;
+    height: 55px;
+
+}
+
+#voucherBox{
+    position: relative;
+    top: 6px;
+    background-color: #ededed;
+    height: 45px;
+    width: 100%;
+    box-sizing: content-box;
+    padding-bottom: 0.5em;
+}
+
+#giftBox{
+    position: relative;
+    top: 4px;
+    left: 15px;
+}
+
+.voucher{
+    position: relative;
+    top: 6px;
+    left: 1em;
+    margin: 0;
+    padding-left: 0.5em;
+    height: 100%;
+    width: 75%;
+    box-sizing: content-box;
+    outline-width: 0;
+    border-width: 0px;
+    background-color: #ededed;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+#priceBox{
+    border-top-width: 0;
+    position: relative;
+    width: 91.8%;
+}
+
+#totalPrice{
+    position: absolute;
+    top: 19px;
+    font-weight: 600;
+}
+
+#nextStep{
+    position:absolute;
+    left: 7.5%;
+    bottom: 20px;
+    width: 85%;
+    height: 8%;
+    border-radius: 0;
+    background-color: #77160d;
+    color: #fafafa;
+    font-size: 24px;
+    font-weight: 450;
+}
+
+#nextStep:active{
+    outline: none !important;
+    box-shadow: none;
+    background-color: #690800;
+    color: #f5f5f5;
+    transition-duration: 0.1s;
+}
+
+#nextStep:focus{
+    outline: none !important;
+    box-shadow: none;
+}
+
+@media(max-width:1855px){
+    .firstRowMenu{
+        top:0;
+        left:0;
+        padding:0;
+        display:inline;
+    }
+    .secondRowMenu{
+        top:0;
+        left:0;
+        padding:0;
+        display:inline;
+    }
+}
+
+@media(max-width:1390px){
+    #firstButtonSection{
+        position: relative;
+        left:25%;
+        display:block;
+    }
+    #secondButtonSection{
+        position: relative;
+        left:25%;
+        display:block;
+    }
+    #thirdButtonSection{
+        position: relative;
+        left:25%;
+        display:block;
+    }
+    #lastButtonSection{
+        position: relative;
+        left:25%;
+        display:block;
+    }
+}
+
+@media(max-width:1100px){
+    .orderBox{
+        width: 99%;
+        margin: 0;
+        float: none;
+    }
+    .menuBox{
+        width: 99%;
+        margin: 0;
+        float: none;
+    }
+    .scrollable{
+        height: 40%;
+    }
+}
+
+@media(max-width:700px){
+    #firstButtonSection{
+        position: relative;
+        left:0%;
+    }
+    #secondButtonSection{
+        position: relative;
+        left:0%;
+    }
+    #thirdButtonSection{
+        position: relative;
+        left:0%;
+    }
+    #lastButtonSection{
+        position: relative;
+        left:0%;
+    }
+    .menuItem .addButton{
+        position:absolute;
+        right: 10%;
+    }
+}
