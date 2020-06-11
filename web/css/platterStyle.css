@@ -583,5 +583,9 @@ button.close {
 @media(max-width:490px){
     .menuBox{
         height: 1300px;
+        margin-bottom: 0.25em;
+    }
+    .menuBox #sectionName{
+        top: 45%;
     }
 }
